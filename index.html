@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/normalize_8_0_1.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>stepwise-form</title>
+</head>
+
+<body>
+  <section class="section">
+    <div class="container">
+      <div class="step">
+        <div class="step-item">
+          <div class="step-count">1</div>
+          <div class="step-text">Мероприятие</div>
+        </div>
+        <div class="step-item">
+          <div class="step-count">2</div>
+          <div class="step-text">Контакты</div>
+        </div>
+      </div>
+      <div class="stepwise">
+        <form class="form">
+          <div class="form-item one">
+            <h2>Расскажите о мероприятии</h2>
+            <p>Выберите формат мероприятия:</p>
+            <div class="form-format">
+              <div class="form-format__input">
+                <input type="radio" name="format" value="furshet" id="furshet">
+                <label for="furshet">Фуршет</label>
+              </div>
+              <div class="form-format__input">
+                <input type="radio" name="format" value="dinner" id="dinner">
+                <label for="furshet">Гастрономический ужин</label>
+              </div>
+              <div class="form-format__input">
+                <input type="radio" name="format" id="banquet">
+                <label for="furshet">Банкет</label>
+              </div>
+            </div>
+            <div class="form-inner">
+              <input type="range" name="" id="quantity">
+              <label for="quantity">Количество гостей:</label>
+            </div>
+            <div class="form-inner__quantity">
+              <span>от 10 человек</span>
+              <span>до 100 человек</span>
+            </div>
+            <div class="form-inner">
+              <label for="date">Дата мероприятия</label>
+              <input type="date" name="date" id="date">
+            </div>
+            <div class="form-inner">
+              <label for="option">Дополнительные услуги:</label>
+              <input type="checkbox" name="option" id="option">
+            </div>
+            <div class="form-inner">
+              <input type="text" name="" id="wishes">
+              <label for="wishes">Напишите пожелания по меню</label>
+            </div>
+          </div>
+          <div class="form-item two"></div>
+        </form>
+        <div class="calc"></div>
+      </div>
+      
+    </div>
+  </section>
+</body>
+
+</html>
