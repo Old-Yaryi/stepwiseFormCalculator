@@ -2,8 +2,29 @@
   font-family: "Lab Grotesque";
   src: url("../fonts/LabGrotesque-Regular.eot");
   src: local("Lab Grotesque Regular"), local("LabGrotesque-Regular"), url("../fonts/LabGrotesque-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/LabGrotesque-Regular.woff2") format("woff2"), url("../fonts/LabGrotesque-Regular.woff") format("woff"), url("../fonts/LabGrotesque-Regular.ttf") format("truetype");
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
+}
+@font-face {
+  font-family: "Lab Grotesque";
+  src: url("../fonts/LabGrotesque-Bold.eot");
+  src: local("Lab Grotesque Regular"), local("LabGrotesque-Regular"), url("../fonts/LabGrotesque-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/LabGrotesque-Bold.woff2") format("woff2"), url("../fonts/LabGrotesque-Bold.woff") format("woff"), url("../fonts/LabGrotesque-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: bold;
+}
+@font-face {
+  font-family: "Lab Grotesque";
+  src: url("../fonts/LabGrotesque-Medium.eot");
+  src: local("Lab Grotesque Regular"), local("LabGrotesque-Regular"), url("../fonts/LabGrotesque-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/LabGrotesque-Medium.woff2") format("woff2"), url("../fonts/LabGrotesque-Medium.woff") format("woff"), url("../fonts/LabGrotesque-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: medium;
+}
+@font-face {
+  font-family: "Lab Grotesque";
+  src: url("../fonts/LabGrotesque-Light.eot");
+  src: local("Lab Grotesque Regular"), local("LabGrotesque-Regular"), url("../fonts/LabGrotesque-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/LabGrotesque-Light.woff2") format("woff2"), url("../fonts/LabGrotesque-Light.woff") format("woff"), url("../fonts/LabGrotesque-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: light;
 }
 body {
   font-family: "Lab Grotesque", sans-serif;
@@ -70,9 +91,6 @@ p {
   display: flex;
   overflow: hidden;
 }
-.form-item {
-  width: 780px;
-}
 .form-item h2 {
   font-size: 40px;
   font-weight: 700;
@@ -112,4 +130,82 @@ p {
   font-size: 20px;
   border-radius: 50px;
   cursor: pointer;
+}
+.form-param {
+  width: 780px;
+}
+.form-inner {
+  position: relative;
+  padding: 30px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  margin-bottom: 24px;
+  border-radius: 12px;
+}
+.form-inner:nth-child(1) {
+  margin-bottom: 11px;
+}
+.form-inner:nth-child(1)::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 7px;
+  width: 10%;
+  height: 4px;
+  background-color: #222733;
+  border-radius: 0 0 0 12px;
+}
+.form-inner label {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 100%;
+}
+.form-inner__value {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 100%;
+}
+.form-inner__range {
+  position: absolute;
+  bottom: -4px;
+  left: 10%;
+  width: 90%;
+}
+.form-inner__range input {
+  width: 100%;
+  height: 4px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: rgba(255, 255, 255, 0);
+}
+.form-inner__range input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+          appearance: none;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: #222733;
+  cursor: pointer;
+  z-index: 2;
+}
+.form-inner__range-value {
+  top: 10px;
+  position: absolute;
+  height: 4px;
+  content: "";
+  background-color: red;
+  width: 10%;
+  pointer-events: none;
+}
+.form-inner__quantity {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  font-size: 18px;
+  opacity: 0.4;
+  font-weight: 400;
+  line-height: 100%;
 }/*# sourceMappingURL=style.css.map */

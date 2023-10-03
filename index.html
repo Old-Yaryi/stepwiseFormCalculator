@@ -40,28 +40,43 @@
                 <label for="banquet">Банкет</label>
               </div>
             </div>
-            <div class="form-inner">
-              <input type="range" name="" id="quantity">
-              <label for="quantity">Количество гостей:</label>
+            <div class="form-param">
+              <div class="form-inner">
+                <div class="form-inner__range">
+                  <input type="range" min="10" max="100" value="10" name="" id="quantity">
+                  <div class="form-inner__range-value"></div>
+                </div>
+                <label for="quantity">Количество гостей:</label>
+                <div class="form-inner__value">
+                  <div class="form-inner__guest"><span></span>человек</div>
+                </div>
+              </div>
+              <div class="form-inner__quantity">
+                <span>от 10 человек</span>
+                <span>до 100 человек</span>
+              </div>
+              <div class="form-inner">
+                <label for="date">Дата мероприятия</label>
+                <div class="form-inner__value">
+                  <input type="date" name="date" id="date">
+                </div>
+              </div>
+              <div class="form-inner">
+                <label for="option">Дополнительные услуги:</label>
+                <div class="form-inner__value">
+                  <input type="checkbox" name="option" id="option">
+                </div>
+              </div>
+              <div class="form-inner">
+                <input class="form-inner__text" type="text" name="" id="wishes">
+                <label for="wishes">Напишите пожелания по меню</label>
+              </div>
             </div>
-            <div class="form-inner__quantity">
-              <span>от 10 человек</span>
-              <span>до 100 человек</span>
-            </div>
-            <div class="form-inner">
-              <label for="date">Дата мероприятия</label>
-              <input type="date" name="date" id="date">
-            </div>
-            <div class="form-inner">
-              <label for="option">Дополнительные услуги:</label>
-              <input type="checkbox" name="option" id="option">
-            </div>
-            <div class="form-inner">
-              <input type="text" name="" id="wishes">
-              <label for="wishes">Напишите пожелания по меню</label>
-            </div>
+              
           </div>
-          <div class="form-item contact"></div>
+          <div class="form-item contact">
+            <input type="text" name="wishes" id="user-name">
+          </div>
         </form>
         <div class="calc"></div>
       </div>
