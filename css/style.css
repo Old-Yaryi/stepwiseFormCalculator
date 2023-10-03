@@ -196,9 +196,14 @@ p {
   position: absolute;
   height: 4px;
   content: "";
-  background-color: red;
-  width: 10%;
+  background-color: #222733;
   pointer-events: none;
+  width: 22%;
+}
+.form-inner__guest {
+  display: flex;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
 }
 .form-inner__quantity {
   display: flex;

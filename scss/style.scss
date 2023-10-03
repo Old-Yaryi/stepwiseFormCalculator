@@ -205,11 +205,14 @@ p {
         position: absolute;
         height: 4px;
         content: "";
-        background-color: red;
-        width: 10%;
+        background-color: #222733;
         pointer-events: none;
+        width: 22%;
       }
-      
+    }
+    &__guest {
+      display: flex;
+      column-gap: 5px;
     }
     &__quantity {
       display: flex;
